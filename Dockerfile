@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 # RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
-
+RUN npm install ip http
 # Bundle app source
 COPY . .
 ENV PORT=1234
